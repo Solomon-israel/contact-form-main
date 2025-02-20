@@ -1,61 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-:root{
-    --Green-200: hsl(148, 38%, 91%);
---Green-600: hsl(169, 82%, 27%);
---Red: hsl(0, 66%, 54%);
---White: hsl(0, 0%, 100%);
---Grey-500: hsl(186, 15%, 59%);
---Grey-900: hsl(187, 24%, 22%);
-}
-
 @import url("'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
-body{
-    /* background-color: var(--Green-200); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper{
-    width:280px;
-    background-color: var(--Green-200);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+:root {
+  --Green-200: hsl(148, 38%, 91%);
+  --Green-600: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-500: hsl(186, 15%, 59%);
+  --Grey-900: hsl(187, 24%, 22%);
 }
 
-.container{
-    
-    background-color: var(--White);
-    width: 250px;
-    border-radius: 10px;
-    padding: 15px;
+body {
+  /* background-color: var(--Green-200); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-h2{
-    margin-bottom: 10px;
-    margin-top: 20px;
+.wrapper {
+  width: 280px;
+  background-color: var(--Green-200);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-p{
-    margin-bottom: 10px;
+.container {
+  background-color: var(--White);
+  width: 250px;
+  border-radius: 10px;
+  padding: 15px;
 }
 
-.starname{
-    display: flex;
-    gap: 10px;
+h2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.starname :last-child{
-    color: var(--Green-600);
-}
-.star-name{
-    display: flex;
-}
+/* p {
+  margin-bottom: 10px;
+} */

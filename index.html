@@ -3,59 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Contact form</title>
   </head>
   <body>
     <div class="wrapper">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="input-text">
-        <div class="starname">
-          <p>First Name</p>
-          <p>*</p>
-        </div>
-        </div>
-        <div class="first-name">
-          <input type="text" />
-        <div class="last-name">
-          <div class="star-name">
-            <p>last name</p>
-            <p>*</p>
+      <form class="container">
+        <h2>Contact Us</h2>
+        <!-- user first name -->
+        <div class="input-field">
+          <div>
+            <label class="label">First Name</label>
+            <span class="green">*</span>
           </div>
-          <p>Last Name</p>
           <input type="text" />
         </div>
-        <div class="email">
-          <div class="star">
-            <p>*</p>
+        <!-- user last namee -->
+        <div class="input-field">
+          <div>
+            <span>Last Name</span>
+            <span class="green">*</span>
           </div>
-          <p>Email Address</p>
+          <input type="text" />
+        </div>
+        <!-- user email -->
+        <div class="input-field">
+          <div>
+            <span>Email</span>
+            <span class="green">*</span>
+          </div>
           <input type="email" />
         </div>
-      </div>
-      <div class="Query">
-        <p>*</p>
-        <p>Querry Type</p>
-        <div class="inputs">
-          <button><input type="radio" /> General Enquiry</button>
+        <!--  -->
+        <div class="query-type">
+          <div>
+            <span class="label">Query Type</span>
+            <span class="green">*</span>
+          </div>
+          <label>
+            <input type="radio" name="choice" value="general"/>
+            <span class="custom-radio"></span>
+            <span>General Enquiry</span>
+          </label>
+          <!-- support request -->
+          <label>
+            <input type="radio" name="choice" value="support"/>
+            <span class="custom-radio"></span>
+            <span>Support Request</span>
+          </label>
         </div>
-        <button><input type="radio" />Support Request</button>
-      </div>
-      <div class="message-box">
-        <p>Message *</p>
-        <div class="box"></div>
-      </div>
-      <div class="text">
-        <p>i consent to being contacted by the team</p>
-        <div class="star">
-          <p>*</p>
+        <!-- message section -->
+        <div class="message">
+          <div>
+            <label for="">Message</label>
+            <span class="green">*</span>
+          </div>
+          <textarea></textarea>
         </div>
-      </div>
-      <div class="submit">
+        <!-- consent message -->
+        <div class="consent">
+          <input type="checkbox">
+          <span>I consent to being contacted by the team</span>
+          <span class="green">*</span>
+        </div>
+        <!-- submit button -->
         <button>submit</button>
-      </div>
-    </div>
+      </form>
     </div>
   </body>
 </html>
