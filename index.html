@@ -7,68 +7,78 @@
     <title>Contact form</title>
   </head>
   <body>
-    <div class="wrapper">
-      <form class="container">
-        <h2>Contact Us</h2>
-        <!-- user first name -->
-        <div class="input-field">
-          <div>
-            <label class="label">First Name</label>
-            <span class="green">*</span>
-          </div>
-          <input type="text" />
+    <form class="form">
+      <h2>Contact Us</h2>
+      <!-- user first name -->
+      <div class="field">
+        <div class="field-label">
+          <label class="label" for="first-name">First Name</label>
+          <span class="green">*</span>
         </div>
-        <!-- user last namee -->
-        <div class="input-field">
-          <div>
-            <span>Last Name</span>
-            <span class="green">*</span>
-          </div>
-          <input type="text" />
+        <input type="text" id="first-name" />
+      </div>
+      <!-- user last name -->
+      <div class="field">
+        <div class="field-label">
+          <span>Last Name</span>
+          <span class="green">*</span>
         </div>
-        <!-- user email -->
-        <div class="input-field">
-          <div>
-            <span>Email</span>
-            <span class="green">*</span>
-          </div>
-          <input type="email" />
+        <input type="text" />
+      </div>
+      <!-- user email -->
+      <div class="field">
+        <div class="field-label">
+          <span>Email</span>
+          <span class="green">*</span>
         </div>
-        <!--  -->
-        <div class="query-type">
-          <div>
-            <span class="label">Query Type</span>
-            <span class="green">*</span>
-          </div>
+        <input type="email" />
+      </div>
+      <!-- query section start -->
+      <div class="query-type">
+        <div class="field-label">
+          <span class="label">Query Type</span>
+          <span class="green">*</span>
+        </div>
+        <div class="choices">
           <label>
-            <input type="radio" name="choice" value="general"/>
+            <input type="radio" name="choice" value="general" />
             <span class="custom-radio"></span>
-            <span>General Enquiry</span>
+            <span class="query-title">General Enquiry</span>
           </label>
           <!-- support request -->
           <label>
-            <input type="radio" name="choice" value="support"/>
+            <input type="radio" name="choice" value="support" />
             <span class="custom-radio"></span>
-            <span>Support Request</span>
+            <span class="query-title">Support Request</span>
           </label>
         </div>
-        <!-- message section -->
-        <div class="message">
-          <div>
-            <label for="">Message</label>
-            <span class="green">*</span>
-          </div>
-          <textarea></textarea>
-        </div>
-        <!-- consent message -->
-        <div class="consent">
-          <input type="checkbox">
-          <span>I consent to being contacted by the team</span>
+        <!-- general  -->
+      </div>
+      <!-- query end -->
+
+      <!-- message section --->
+      <div class="message">
+        <div class="field-label">
+          <label for="">Message</label>
           <span class="green">*</span>
         </div>
-        <!-- submit button -->
-        <button>submit</button>
-      </form>
-    </div>
+        <textarea cols="10"></textarea>
+      </div>
+      <!-- message end -->
+
+       <!-- consent message -->
+        <div class="consent">
+          <input type="checkbox" />
+          <span class="custom-checkbox"></span>
+          <div>
+            <span>I consent to being contacted by the team</span>
+            <span class="green">*</span>
+          </div>
+        </div>
+        <!-- consent end -->
+
+         <!-- submit button -->
+        <button>Submit</button>
+    </form>
   </body>
 </html>
