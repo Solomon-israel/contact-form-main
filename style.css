@@ -29,7 +29,7 @@ body {
 
 .form {
   padding: 1.5rem;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 90%;
   background-color: var(--White);
   display: flex;
